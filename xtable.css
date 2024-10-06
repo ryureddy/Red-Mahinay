@@ -1,0 +1,46 @@
+
+
+
+
+.button {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+body{
+    background-image: url(/img/bgcolor.png);
+    align-items: center;
+}
+table{
+    color:  rgb(8, 8, 8); 
+    top:50%; 
+    left:50%; 
+    right: 50%;
+    bottom: 50%;
+    position: absolute; 
+    margin-top:-260px; 
+    margin-left:-215px; 
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+}
+td{
+    padding: 6px; 
+    text-align: center;
+    border: solid rgb(255, 255, 255);
+}
+th{
+    font-size: 25px;
+}
+.bold{
+    font-weight: bold; 
+    font-size: 20px;
+}
+.footer {
+    background-color: rgba(255, 112, 165, 0.2);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+}

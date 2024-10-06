@@ -1,0 +1,186 @@
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+/* top navbar */
+nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 7px;
+    margin: none;
+    background-color: rgba(255, 112, 165, 0.2);
+}
+.logo-img {
+    width: 200px;
+    height: 80px;
+}
+nav ul li{
+    display: flex;
+    align-items: right;
+    justify-content:right;
+    flex-wrap: wrap;
+}
+.name {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 2px 0;
+}
+
+/* side navbar */
+.side-nav {
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    top: 10% ;
+    right: 0;
+    padding: 30px 5px;
+    transition: width 0.5s;
+}
+.user div {
+    display: none;
+}
+ul {
+    list-style: none;
+    padding: 0 15px;
+}
+ul li {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+ul li a {
+    white-space: nowrap;
+    display: none;
+}
+ul li img {
+    width: 80px;
+    height: 80px;
+}
+.side-nav:hover {
+    width: 200px;
+}
+.side-nav:hover ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.side-nav a:hover {
+    position: relative;
+    font-size: 18px;
+}
+.side-nav a::after {
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #fa6a9f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.side-nav a:hover::after{
+    width: 100%;
+}
+.side-nav:hover ul li img {
+    margin-right: 10px;
+}
+
+/* body content */
+body {
+    background-image: url(/img/bghome.png);
+    width: 100%;
+    /* dagdag sad ni */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* dara na dagdag huhu */
+    background-attachment: fixed;
+    height: 100%;
+
+    /* add */
+    overflow: auto;
+    min-height: 100%;
+}
+
+/* xtable */
+.xtable-img {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.xtable {
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto
+}
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* footer */
+.footer {
+    background-color: rgba(255, 112, 165, 0.2);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+}
+
+/* media */
+@media only screen and (max-width:2000px){
+    .side-nav {
+        width: 100px;
+        height: 100%;
+        position: fixed;
+        top: 15% ;
+        right: 0;
+        padding: 3px 3px;
+        transition: width 0.5s;
+        justify-content: space-between;
+        display: flex;
+    }
+    ul li {
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    ul li img {
+        width: 50px;
+        height: 50px;
+    }
+    .side-nav:hover {
+        width: 150px;
+    }
+    .side-nav:hover ul li a {
+        transition: 1s;
+    }
+}
